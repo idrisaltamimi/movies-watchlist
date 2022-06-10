@@ -14,7 +14,7 @@ localStorage.setItem("prevValue", "")
 
 function fetchData(value) {
    const fetchFilmId = async () => {
-      const res = await fetch(`http://www.omdbapi.com/?s=${value}&apikey=f9d32e02`)
+      const res = await fetch(`https://www.omdbapi.com/?s=${value}&apikey=f9d32e02`)
       const id = await res.json()
       if (id.Response === "False") {
          if (value === "") {
@@ -25,7 +25,7 @@ function fetchData(value) {
          }
       } else {
          const cards = id?.Search?.map(async item => {
-            const response = await fetch(`http://www.omdbapi.com/?i=${item.imdbID}&apikey=f9d32e02`)
+            const response = await fetch(`https://www.omdbapi.com/?i=${item.imdbID}&apikey=f9d32e02`)
             const data = await response.json()
             return data
          })
