@@ -431,7 +431,19 @@ section:last-child {
    align-items: center;
 }
 
-.mylinks a>img {
+.mylinks>a {
    width: 15px;
    height: 15px;
+}
+
+.twitter {
+   content: url(./img/twitter.svg);
+}
+
+.instagram {
+   content: url(./img/instagram.svg);
+}
+
+.github {
+   content: url(./img/git.png);
 }
