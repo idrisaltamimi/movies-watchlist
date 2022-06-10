@@ -431,27 +431,7 @@ section:last-child {
    align-items: center;
 }
 
-.twitter,
-.instagram,
-.github {
-   text-indent: 100%;
-   white-space: nowrap;
-   overflow: hidden;
+.mylinks a>img {
    width: 15px;
    height: 15px;
-}
-
-.twitter {
-   background: url(/img/twitter.svg);
-   background-size: contain;
-}
-
-.instagram {
-   background: url(/img/instagram.svg);
-   background-size: contain;
-}
-
-.github {
-   background: url(/img/git.png);
-   background-size: contain;
 }
