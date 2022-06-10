@@ -39,7 +39,7 @@ export function filmCard(data) {
       const plotHtml = getHtml("plot")
       const readmoreHtml = getHtml("readmore-btn")
       const showlessHtml = getHtml("showless-btn")
-      if (Plot.length < 134) {
+      if (Plot?.length < 134) {
          readmoreHtml.style.display = "none"
          plotHtml.textContent = Plot === "N/A" ? "" : Plot
       } else {
