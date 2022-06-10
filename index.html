@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+   <script type="module" src="script.js" defer></script>
+   <title>Find your movie</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <header>
+      <div class="navbar">
+         <h1 class="title">Find your film</h1>
+         <a href="./watchlist.html" class="page-link">My Watchlist</a>
+      </div>
+      <div class="input-form">
+         <button class="search-btn">Search</button>
+         <input type="search" placeholder="Search for a movie" class="search-input" />
+      </div>
+   </header>
+   <main>
+      <div class="explore">
+         <img src="./img/iconfilm.svg" alt="film icon" class="explore-icon">
+         <h3 class="explore-title">Start exploring</h3>
+      </div>
+      <div class="explore-no-result">
+         <h3 class="explore-title">Unable to find what you’re looking for. Please try another search.</h3>
+      </div>
+
+      <div class="cards-container"></div>
+
+      <template class="cards-template">
+         <section>
+            <div class="poster-container">
+               <img src="" class="movie-poster">
+            </div>
+            <div class="movie-info-container">
+               <div class="movie-title-container">
+                  <h3 class="movie-title"></h3>
+                  <div class="rating-container">
+                     <img src="./img/iconstar.svg">
+                     <span class="movie-rating"></span>
+                  </div>
+               </div>
+               <div class="movie-stats-container">
+                  <span class="movie-runtime"></span>
+                  <span class="movie-genre"></span>
+                  <div class="watchlist-btn-container">
+                     <img src="" class="movie-watchlist-btn">
+                     <span>Watchlist</span>
+                  </div>
+               </div>
+               <div>
+                  <span class="movie-plot"></span><span class="movie-readmore-btn">Readmore</span>
+                  <span class="movie-showless-btn">Show less</span>
+               </div>
+            </div>
+         </section>
+      </template>
+      <div class="clipboard"></div>
+   </main>
+   <footer class="footer">
+      <div class="about">
+         <small>Project challenge by <a target="_blank" href="https://scrimba.com">scrimba</a>. Coded by <a
+               target="_blank" href="https://github.com/idrisaltamimi/movies-watchlist.git">idris Al Tamimi</a></small>
+      </div>
+      <div class="mylinks">
+         <a target="_blank" class="twitter" href="https://twitter.com/idris_altamimi">twitter</a>
+         <a target="_blank" class="instagram" href="https://www.instagram.com/idris.altamimi/">instagram</a>
+         <a target="_blank" class="github" href="https://github.com/idrisaltamimi">github</a>
+      </div>
+   </footer>
+</body>
+
+</html>
