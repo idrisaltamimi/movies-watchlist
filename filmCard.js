@@ -41,10 +41,10 @@ export function filmCard(data) {
       const showlessHtml = getHtml("showless-btn")
       if (Plot?.length < 134) {
          readmoreHtml.style.display = "none"
-         plotHtml.textContent = Plot === "N/A" ? " " : Plot
+         plotHtml.textContent = Plot === "N/A" ? "" : Plot
       } else {
-         let displayText = Plot.slice(0, 132)
-         let moreText = Plot.slice(132)
+         let displayText = Plot?.slice(0, 132)
+         let moreText = Plot?.slice(132)
          plotHtml.textContent = displayText.concat("...")
 
          readmoreHtml.addEventListener("click", () => showmoreLess(moreText, "none", "block"))
